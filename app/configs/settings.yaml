@@ -1,0 +1,33 @@
+# ============================================================
+#  SYSTEM CONFIGURATION FILE
+#  Motorcycle Theft Intelligence (ML + Anomaly Detection)
+# ============================================================
+
+project:
+  name: "Smart Theft Risk Intelligence System"
+  version: "1.0"
+  author: "Vignesh"
+  description: "Motorcycle theft detection using ML + synthetic sensor anomaly detection."
+
+# ============================================================
+#  SYNTHETIC DATA GENERATION SETTINGS
+# ============================================================
+data_generation:
+  num_samples: 20000               # total rows to generate
+  theft_ratio: 0.10                # 10% theft events
+  speed:
+    normal_mean: 45
+    normal_std: 12
+    theft_mean: 5                   # lower speed or zero indicating immobilizer tampering
+    theft_std: 2
+  accel:
+    normal_mean: 1.1
+    normal_std: 0.5
+    theft_mean: 3.0                 # violent shake or disturbance
+    theft_std: 1.2
+  gyro_z:
+    normal_mean: 0.0
+    normal_std: 20
+    theft_mean: 120                 # bike being lifted/tilted
+    theft_std: 40
+  vibratio

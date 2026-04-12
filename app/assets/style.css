@@ -1,0 +1,121 @@
+/* =====================================================
+   CYBER SECURITY BLUE THEME
+   Clean • Modern • Surveillance Aesthetic
+===================================================== */
+
+/* GLOBAL */
+html, body {
+    background-color: #0d1117 !important;
+    color: #e2e8f0 !important;
+    font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+.block-container {
+    padding-top: 2rem !important;
+}
+
+/* HEADERS */
+h1, h2, h3, label, p, span, .stMarkdown {
+    color: #e2e8f0 !important;
+}
+
+h1 {
+    color: #58a6ff !important;
+    font-weight: 700 !important;
+}
+
+h2 {
+    color: #4ea1f3 !important;
+}
+
+/* SIDEBAR */
+section[data-testid="stSidebar"] {
+    background-color: #0b0f14 !important;
+    border-right: 1px solid #1f2937 !important;
+}
+
+section[data-testid="stSidebar"] * {
+    color: #cfd8e3 !important;
+}
+
+/* BUTTONS */
+.stButton>button {
+    background-color: #1f6feb !important;
+    color: #ffffff !important;
+    border-radius: 8px !important;
+    padding: 10px 18px !important;
+    border: none !important;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.stButton>button:hover {
+    background-color: #1158c7 !important;
+}
+
+/* CARDS */
+.cyber-card {
+    background: #161b22 !important;
+    border-radius: 12px;
+    padding: 18px;
+    border: 1px solid #1f2937;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.4);
+    margin-bottom: 15px;
+}
+
+/* METRIC CARDS */
+.stMetric {
+    background-color: #161b22 !important;
+    color: #e2e8f0 !important;
+    border-radius: 12px !important;
+    padding: 15px !important;
+    border: 1px solid #1f2937 !important;
+}
+
+/* FILE UPLOADER */
+.stFileUploader {
+    background-color: #161b22 !important;
+    border: 2px dashed #3b4252 !important;
+    border-radius: 10px !important;
+}
+
+/* TABLES */
+table {
+    background-color: #161b22 !important;
+}
+
+th {
+    background-color: #1f2937 !important;
+    color: #e2e8f0 !important;
+}
+
+td {
+    background-color: #0f141a !important;
+    color: #e2e8f0 !important;
+}
+
+/* CHART CONTAINERS */
+.stPlotlyChart, .stPyplot, .js-plotly-plot {
+    background-color: #161b22 !important;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.5);
+}
+
+/* ALERT PULSE (anomaly indicator) */
+.alert-pulse {
+  width: 14px;
+  height: 14px;
+  background: #ff4d4d;
+  border-radius: 50%;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.85); opacity: 0.7; }
+  50% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(0.85); opacity: 0.7; }
+}
+
+/* Hide Streamlit footer */
+footer { visibility: hidden; }

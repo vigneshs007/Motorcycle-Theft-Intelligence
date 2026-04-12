@@ -1,0 +1,48 @@
+Motorcycle-Theft-Intelligence/
+│
+├── data/
+│     ├── raw/                  # raw generated or real sensor files
+│     └── processed/            # cleaned & feature-engineered data
+│
+├── notebooks/
+│     ├── 01_generate_synthetic_data.ipynb
+│     ├── 02_feature_engineering.ipynb
+│     └── 03_model_training_eval.ipynb
+│
+├── src/
+│     ├── data_generator.py         # synthetic sensor generation
+│     ├── feature_engineering.py    # sliding window + features
+│     ├── anomaly_detection.py      # unsupervised ML
+│     ├── model_training.py         # supervised ML
+│     └── utils.py                  # common helper functions
+│
+├── app/
+│     ├── streamlit_app.py          # final dashboard
+│     ├── components/
+│     │      ├── charts.py          # line charts, anomaly plots
+│     │      ├── maps.py            # GPS/route visuals
+│     │      └── layout.py          # UI layout components
+│     └── assets/
+│            └── style.css          # optional custom styling
+│
+├── visuals/
+│     ├── speed_plots/              # generated visual outputs
+│     ├── anomaly_plots/
+│     └── feature_plots/
+│
+├── models/
+│     ├── isolation_forest.pkl
+│     ├── random_forest.pkl
+│     └── scaler.pkl
+│
+├── configs/
+│     └── settings.yaml             # hyperparameters & config
+│
+├── requirements.txt                # dependencies
+│
+└── README.md                       # project documentation
+
+
+
+manually shall i run py and every files and paste it in folder?\
+
